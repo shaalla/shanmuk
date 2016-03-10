@@ -1,0 +1,45 @@
+<html ng-app="update">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js"></script>
+    <title>Registration</title>
+</head>
+<body ng-controller="UpdateController">
+<div id="tablestyle">
+            <table>
+                <tr>
+                    <td>
+                        Old Password:
+                    </td>
+                    <td>
+                        <input type="text" id="EPassword" ng-model="epasst"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        New Password:
+                    </td>
+                    <td>
+                        <input type="text" id="NPassword" ng-model="npass"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Confirm new Password:
+                    </td>
+                    <td>
+                        <input type="text" id="CPassword" ng-model="cpass"/>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="Update" name="update" ng-click="UpdatePassword(first,last,email,phone,pass)">UpdateProfile</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</body>
+</html>
